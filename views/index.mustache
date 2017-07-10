@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Home Page for Login App</title>
+  </head>
+  <body>
+    {{^loginAttempt}}
+    <p>You are not logged in.</p>
+    <a href="/login">Login Page</a>
+    {{/loginAttempt}}
+    {{#loginAttempt}}
+    <p>Thank you for logging in! {{username}}</p>
+    {{/loginAttempt}}
+  </body>
+</html>
